@@ -1,118 +1,113 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!--     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159411627-1"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Janjua — Software Engineer</title>
+    <meta name="description" content="Sahil Janjua — Software Engineer building scalable full-stack applications, cloud infrastructure, and AI-powered systems. Java, Node.js, AWS, Kubernetes.">
+
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/img/favicon.svg">
+    <meta name="theme-color" content="#2563eb">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0HDBM0FVH7"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
-        gtag('config', 'UA-159411627-1');
-    </script> -->
-    <!-- Caching Disabler-->
-        <meta http-equiv="Pragma" content="no-cache">
-        <meta http-equiv="Expires" content="-1">
-        <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
-    
-    
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <meta name="Description"
-        content="Sahil Janjua BC, Canada  www.SahilJ10319.github.io Assembly | Java | C/C++ | Selenium | Software Developer | Web Developer" />
-    <title>Sahil Janjua</title>
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
-    <link rel="apple-touch-icon" href="assets/img/favicon.png">
-    <meta name="apple-mobile-web-app-status-bar" content="#FFE1C4">
-    <meta name="theme-color" content="#FFE1C4">
-    <script src="assets/js/app.js"></script>
-    <link rel="manifest" href="manifest.json">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0HDBM0FVH7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0HDBM0FVH7');
-</script>
-
+        gtag('config', 'G-0HDBM0FVH7');
+    </script>
 </head>
-
-<body id="index-body" style="overflow: hidden;">
-    <div>
-        <nav class="nav-desk">
-            <center>
-                <div class="nav-logo">
-                    <a href="index.html"><img id="logo" src="assets/img/logo2.png"></a>
-                </div>
-                <div class="nav-items">
-                    <ul>
-                        <li><span><a href="work.html">Projects</a></span></li>
-                        <li><span><a href="contact.html">Contact</a></span></li>
-                    </ul>
-                </div>
-
-            </center>
-        </nav>
-        <div class="animated fadeIn row" style="width:100vw;animation-duration: 1.5s;">
-            <div class="col-md-6" id="left-hero">
-                <h1 class="hero-tag"><span class="typer" id="main" data-words="Hi, I'm Sahil." data-delay="100"
-                        data-deleteDelay="1000" data-loop="1" style="color:blue!important;"></span>
-                    &nbsp;</h1>
-                <p class="hero-des">I'm a student at <b>Simon Fraser University</b> and a code enthusiast that loves problem-solving.
-                    If you'd like to know more about me or need help with a project, get in touch with me here!
-                </p>
-                <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
-                <a href="assets/ResumeN.pdf" style="text-decoration: none;"> <button class="animated bounce delay-4s learn-btn">
-                   Resume
-                </button>
-                <a href="contact.html"><button class="contact-btn">
-                        Contact Me
-                    </button></a>
-                <div class="social-icons">
-                    <a target="_blank" href="mailto:sahil_janjua@sfu.ca"><i class="fas fa-envelope"></i></a>
-                    <a target="_blank" href="https://github.com/SahilJ10319"><i class="fab fa-github"></i></a>
-                    <a target="_blank" href="https://linkedin.com/in/sahil-janjua10319"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-
-            <div class="col-md-6" id="hero-right">
-                <img id="hero-img" src="assets/img/undraw_code_review_l1q9.svg">
-            </div>
-
+<body>
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">SJ.</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="work.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="work.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </div>
-    <div class="menu-wrap">
-        <input type="checkbox" class="toggler">
-        <div class="hamburger">
-            <div></div>
-        </div>
-        <div class="menu">
-            <div>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-grid">
                 <div>
-                    <ul>
-                        <li><a href="#" style="text-decoration: line-through;">Home</a></li>
-                        <li><a href="work.html">Projects</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+                    <p class="hero-eyebrow">// Software Engineer</p>
+                    <h1 class="hero-title">
+                        <span id="tw-pre"></span><span class="accent" id="tw-mid"></span><span id="tw-post"></span><span class="cursor" aria-hidden="true">|</span>
+                    </h1>
+                    <p class="hero-bio">
+                        I build scalable full-stack applications, cloud infrastructure, and
+                        AI-powered systems. Currently a Junior Software Engineer at
+                        <strong>The Growth Spark</strong>; previously interned on the
+                        <strong>SAP Analytics Cloud</strong> team.
+                    </p>
+
+                    <div class="hero-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Vancouver, BC</span>
+                        <span><i class="fas fa-graduation-cap"></i> SFU, Software Systems</span>
+                        <span><i class="fas fa-circle" style="color:#16a34a;font-size:8px;"></i> Open to opportunities</span>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="assets/Sahil_Janjua_Resume.pdf" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-file-alt"></i> Resume
+                        </a>
+                        <a href="contact.html" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Get in touch
+                        </a>
+                    </div>
+
+                    <div class="social-icons">
+                        <a href="mailto:sahil.janjua10319@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a target="_blank" rel="noopener" href="https://github.com/SahilJ10319" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a target="_blank" rel="noopener" href="https://linkedin.com/in/sahil-janjua10319" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="code-line"><span class="comment">// stack.ts</span></div>
+                    <div class="code-line"><span class="keyword">const</span> sahil = {</div>
+                    <div class="code-line">&nbsp;&nbsp;backend: [<span class="string">'Java'</span>, <span class="string">'Spring Boot'</span>, <span class="string">'Node.js'</span>],</div>
+                    <div class="code-line">&nbsp;&nbsp;frontend: [<span class="string">'React'</span>, <span class="string">'Next.js'</span>, <span class="string">'Angular'</span>],</div>
+                    <div class="code-line">&nbsp;&nbsp;cloud: [<span class="string">'AWS'</span>, <span class="string">'Docker'</span>, <span class="string">'Kubernetes'</span>],</div>
+                    <div class="code-line">&nbsp;&nbsp;data: [<span class="string">'PostgreSQL'</span>, <span class="string">'MongoDB'</span>, <span class="string">'Kafka'</span>],</div>
+                    <div class="code-line">&nbsp;&nbsp;ai: [<span class="string">'LLMs'</span>, <span class="string">'embeddings'</span>, <span class="string">'Ray Serve'</span>],</div>
+                    <div class="code-line">&nbsp;&nbsp;currently: <span class="string">'building self-healing'</span>,</div>
+                    <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">'API gateways'</span>,</div>
+                    <div class="code-line">};</div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="legal">
-        <a href="legal.html">legal</a>
-    </div>
-</body>
+        </section>
+    </main>
 
+    <footer class="footer">
+        <div class="footer-inner">
+            <p>© 2026 Sahil Janjua</p>
+            <div class="social-icons">
+                <a href="mailto:sahil.janjua10319@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a target="_blank" rel="noopener" href="https://github.com/SahilJ10319" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a target="_blank" rel="noopener" href="https://linkedin.com/in/sahil-janjua10319" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/nav.js" defer></script>
+    <script src="assets/js/typer.js" defer></script>
+</body>
 </html>
