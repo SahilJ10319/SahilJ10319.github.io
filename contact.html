@@ -61,7 +61,10 @@
                 </ul>
             </div>
 
-            <form method="POST" action="https://formsubmit.co/sahil-janjua@hotmail.com">
+            <form id="contactForm" method="POST" action="https://formsubmit.co/ajax/sahil-janjua@hotmail.com">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="New message from your portfolio site">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" class="form-control" required>
@@ -74,9 +77,10 @@
                     <label for="message">Message</label>
                     <textarea rows="4" id="message" name="message" class="form-control" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">
+                <button type="submit" class="btn btn-primary" id="submitBtn">
                     <i class="fas fa-paper-plane"></i> Send message
                 </button>
+                <p class="form-status" id="formStatus" role="status" aria-live="polite" hidden></p>
             </form>
         </section>
     </main>
@@ -92,5 +96,48 @@
         </div>
     </footer>
     <script src="assets/js/nav.js" defer></script>
+    <script>
+        (function () {
+            const form = document.getElementById('contactForm');
+            const status = document.getElementById('formStatus');
+            const btn = document.getElementById('submitBtn');
+            if (!form) return;
+
+            function showStatus(message, type) {
+                status.textContent = message;
+                status.className = 'form-status ' + type;
+                status.hidden = false;
+            }
+
+            form.addEventListener('submit', async function (e) {
+                e.preventDefault();
+                btn.disabled = true;
+                showStatus('Sending…', 'sending');
+
+                try {
+                    const res = await fetch(form.action, {
+                        method: 'POST',
+                        body: new FormData(form),
+                        headers: { 'Accept': 'application/json' }
+                    });
+                    const data = await res.json().catch(() => ({}));
+
+                    if (res.ok && data.success !== 'false') {
+                        form.reset();
+                        showStatus("Thanks! Your message was sent — I'll get back to you soon.", 'success');
+                    } else {
+                        throw new Error(data.message || 'Request failed');
+                    }
+                } catch (err) {
+                    showStatus(
+                        "Sorry, the message couldn't be sent right now. Please email me directly at sahil-janjua@hotmail.com.",
+                        'error'
+                    );
+                } finally {
+                    btn.disabled = false;
+                }
+            });
+        })();
+    </script>
 </body>
 </html>
